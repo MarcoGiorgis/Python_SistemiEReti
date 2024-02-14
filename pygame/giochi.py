@@ -16,6 +16,7 @@ class Snake():
     
     def updateNew_head(self):
         #calcola le nuove cordinate x e y della testa del serprente
+        #snake[0][0] prende solamente il valore di x [0][1] prende il valore y
         return (self.snake[0][0] + self.snake_direction[0] * self.snake_size, self.snake[0][1] + self.snake_direction[1] * self.snake_size)
     
     def snakePosition(self, new_head):
