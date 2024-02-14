@@ -27,7 +27,6 @@ def cercaProteinaSpike(stringa):
             return i
     return -1
         
-
 def main():
     file = open("covid-19_gen1.txt", "r")
     righeFile = file.readlines()

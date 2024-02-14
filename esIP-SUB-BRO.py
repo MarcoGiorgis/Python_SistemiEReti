@@ -18,8 +18,6 @@ def main():
     # Indirizzo IP in formato binario
     ip_binary_groups = [format(int(x), '08b') for x in ip_address.split('.')]
     ip_binary = ''.join(ip_binary_groups)
-    print(ip_binary_groups)
-    print(ip_binary)
     ip_network = ip_binary[0:cidr] + "0" * (32 - cidr)
     ip_broadcast = ip_binary[0:cidr] + "1" * (32 - cidr)
     print(f"Ip rete: {conversioneDecimale(ip_network)}")

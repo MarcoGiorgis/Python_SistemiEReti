@@ -12,8 +12,8 @@ def main():
     print_list(3*r) #concatena la lista per tre volte utile anche con le stringhe
     print(l)
     #print(l[-1])
-    #print(l[::-1])
-    print_list(l[::-1])
+
+    print_list(l[::-1]) #inverte la lista
 
     #vogliamo permettere all'utente di caricare una lista
     lista = []
