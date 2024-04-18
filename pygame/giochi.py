@@ -20,7 +20,6 @@ class Snake():
         return (self.snake[0][0] + self.snake_direction[0] * self.snake_size, self.snake[0][1] + self.snake_direction[1] * self.snake_size)
     
     def snakePosition(self, new_head):
-        #aggiunge la nuova testa al serprente rimuovendo l'ultima
         return [new_head] + self.snake[:-1]
 
 class Apple: 
